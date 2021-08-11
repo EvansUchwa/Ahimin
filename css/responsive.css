@@ -1,0 +1,136 @@
+@media screen and (max-width: 576px)
+{
+	div.navFirstRow
+	{
+		display: none;
+	}
+	div.navSecondRow
+	{
+		height: var(--navHeight);
+		margin: 0;
+	}
+	
+
+	/*Pour la partie rechere de la page d'accueil*/
+	div.indexbanner
+	{
+		background-position: center bottom;
+		background-size: 100vw;
+	}
+	div.ibTitle
+	{
+		top: 10%;
+		font-size: 20px;
+	}
+	div.ecImg
+	{
+		width: 90%;
+		/*margin: auto;*/
+	}
+	div.ecCategories
+	{
+		width: 90%;
+	}
+	/*div.ibSearchForm
+	{
+		width: 90%;
+	}
+	div.ibSearchForm form
+	{
+		flex-direction: column;
+	}
+	div.ibsfFied
+	{
+		margin: 5px auto;
+		width: 80%;
+	}
+	div.ibsfBtn
+	{
+		margin-top: 5px;
+		width: 75%;
+	}*/
+	
+	div.pbvTitle
+	{
+		font-size: 20px;
+	}
+	div.ProductByVille
+	{
+		padding: 30px 0;
+	}
+	div.pbvHr
+	{
+		margin: 10px auto;
+	}
+	div.pbvTitle
+	{
+		width: 80%;
+		margin: auto;
+		font-size: 20px;
+	}
+	/*Modal d'espace membre*/
+	#registerModal
+	{
+		/*display: none;*/
+	}
+	div.rmBody
+	{
+		font-family: var(--myFont1);
+		max-height: 80%;
+		background-color: var(--colorWhite1);
+		width: 80%;
+	}
+	div.choiceRegister
+	{
+		width: 100%;
+		text-align: center;
+	}
+	div.footForm
+	{
+		width: 100%;
+	}
+
+
+
+	/*Pour la page produit*/
+	div.pfModalBody
+	{
+		width: 90%;
+	}
+	#pfmFormFieldPrice > div > div
+	{
+		flex-direction: column;
+	}
+	div.pfmFormField:nth-child(1)
+	{
+		width: 100%;
+	}
+	div.pfmFormField:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	/*Pour la page membre*/
+	div.aaTitle label
+	{
+		margin: auto 10px;
+	}
+	div.authentificationArea
+	{
+		width: 90%;
+	}
+	div.authentificationArea form div.formField input
+	{
+		width: 90%;
+	} 
+	
+	/*Page contact*/
+	div.contactBanner
+	{
+		background-size: 60%;
+	}
+	div.contactBanner div
+	{
+		padding: 5px 0px;
+	}
+}

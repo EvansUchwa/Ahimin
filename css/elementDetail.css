@@ -1,0 +1,416 @@
+h1{ font-size: calc(var(--textSize) * 1.8); }
+h2{ font-size: calc(var(--textSize) * 1.6); }
+h3{ font-size: calc(var(--textSize) * 1.4); }
+h4{ font-size: calc(var(--textSize) * 1.2); }
+h5{ font-size: calc(var(--textSize) * 1); }
+h6{ font-size: calc(var(--textSize) * 0.8); }
+
+
+
+
+
+
+
+textarea
+{
+	height: calc(var(--inputHeight) *3);
+	padding: 10px 20px;
+	border: solid 1px var(--colorWhite3);
+}
+div.elementDetails
+{
+	width: 90%;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+div.reactBtn
+{
+	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	margin: 10px 0;
+	width: 100%;
+}
+div.reactBtn label
+{
+	font-size: calc(var(--textSize) * 2);
+	margin-left: 10px;
+}
+#checkReact:checked ~ div.reactBtn label
+{
+	color: #cc0000;
+	animation: myReact 2s infinite;
+}
+div.pdImgSlide
+{
+	margin: auto;
+	width: 45%;
+	/*background-color: pink;*/
+	display: flex;
+	flex-direction: column;
+}
+diV.pdisGiant
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	/*background-color: pink;*/
+}
+diV.pdisGiant div.pdisgImg
+{
+	display: flex;
+	justify-content: center;
+}
+div.pdisgImg img
+{
+	margin: auto;
+	height: 300px;
+	width: 60%;
+	object-fit: contain;
+}
+
+div.pdisSmall
+{
+	margin: 10px auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+}
+div.pdisSmall div.pdissImg
+{
+	width: 30%;
+	margin: auto 5px;
+	height: 100px;
+}
+div.pdissImg img
+{
+	height: 100%;
+	box-sizing: border-box;
+	object-fit: contain;
+	margin: auto;
+	text-align: center;
+	width: 70%;
+}
+
+
+div.pdTextInfos
+{
+	font-family: var(--myFont1);
+	margin: 0 auto;
+	width: 50%;
+}
+div.pdtiNamesLocationType
+{
+	width: 100%;
+}
+
+div.elementPosterName
+{
+	background-color: var(--colorSecond);
+}
+div.elementPosterName a
+{
+	color: var(--colorWhite1);
+}
+div.elementName
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: solid 2px var(--colorPrincipal);
+}
+div.elementName span
+{
+	padding: 5px 10px;
+	color: var(--colorWhite1);
+	background-color: var(--colorScLow2);
+}
+div.elementPrice
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+div.elementPrice span
+{
+	font-size: calc(var(--textSize) * 1.1);
+}
+div.elementReact
+{
+	width: 100%;
+	display: flex;
+	justify-content: right;
+}
+div.elementReact div
+{
+	margin: auto 10px;
+}
+div.elementLocation
+{
+	color: var(--colorScLow2);
+}
+div.elementDescription
+{
+	/*background-color: pink;*/
+	display: flex;
+	flex-direction: column !important;
+}
+div.elementDescription p
+{
+	padding: 10px 0;
+}
+div.elementCategorie a
+{
+	color: var(--colorPrincipal);
+}
+div.elementSubCategorie a
+{
+	color: var(--colorPrincipal);
+}
+div.pdtiNamesLocationType i
+{
+	font-size: calc(var(--textSize) * 1.5);
+}
+div.pdtiNamesLocationType a:first-child
+{
+	font-size: calc(var(--textSize) * 1.5);
+}
+div.pdtiNamesLocationType div
+{
+	display: flex;
+	flex-direction: row;
+	/*justify-content: center;*/
+}
+div.pdtiNamesLocationType div h3
+{
+	margin: 5px 0;
+}
+div.pdtiNamesLocationType div a
+{
+	margin: auto 5px;
+	padding: 2px;
+	border-radius: 50px;
+	font-size: calc(var(--textSize));
+}
+
+div.pdtiPriceRateDescription div:nth-child(1),div.pdtiPriceRateDescription div:nth-child(2)
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+div.pdtiPriceRateDescription div span
+{
+	margin-left: 10px;
+}
+div.pdtiPriceRateDescription div h3
+{
+	margin: 5px 0;
+}
+
+div.pdtiPriceRateDescription h2
+{
+	display: flex;
+}
+
+/*Form commentaire*/
+.commentForm,.commentList
+{
+	width: 90%;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.commentForm form
+{	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.commentForm label
+{
+	margin: 5px;
+}
+.commentForm button
+{
+	margin: 10px 50px auto auto;
+}
+/*REponse commentaire form*/
+div.replyCommentForm
+{
+	background-color: var(--colorWhite1);
+	position: fixed;
+	bottom: -100%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	transition: all 0.3s ease;
+}
+div.replyCommentForm form
+{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	
+}
+div.replyCommentForm label
+{
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+}
+div.replyCommentForm label span
+{
+	font-weight: bold;
+	margin-right: 15px;
+}
+div.replyCommentForm label p
+{
+	margin-left: 2px;
+	color: var(--colorWhite4);
+	max-width: 80%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+div.replyCommentForm form div
+{
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: right;
+}
+div.replyCommentForm form div button
+{
+	margin: auto 10px;
+}
+div.replyCommentForm form div button:first-child
+{
+	background-color: var(--colorWhite2);
+}
+/*Liste commentaire*/
+.comments
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 40px auto;
+}
+.comment,.replyComment
+{
+	margin: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.commentInfo,div.replyCommentInfo
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.commentImgUserAndDate
+{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+div.commentImgUserAndDate img
+{
+	background-color: var(--colorSecond);
+	height: calc(var(--textSize) * 4);
+	width: calc(var(--textSize) * 4);
+	border-radius: 100%;
+	object-fit: cover;
+	/*margin-right: 10px;*/
+}
+div.commentImgUserAndDate div
+{
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+}
+div.commentImgUserAndDate div a
+{
+	font-weight: bold;
+	font-size: calc(var(--textSize) * 1.2);
+	color: var(--colorScLow2);
+}
+div.commentImgUserAndDate div i
+{
+	margin: 0 3px 0 10px;
+	font-size: calc(var(--textSize) * 1.5);
+	color: var(--colorWhite4);
+	display: initial;
+}
+div.commentImgUserAndDate div span
+{
+	font-size: calc(var(--textSize));
+	color: var(--colorWhite3);
+}
+div.commentContent
+{
+	width: 90%;
+	box-sizing: border-box;
+	background-color: var(--colorWhite2);
+	margin: 10px auto 0 auto;
+	padding: 20px 10px;
+	border-radius: 0 20px 20px 20px;
+}
+
+div.commentAction
+{
+	width: 90%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: right;
+	flex-wrap: wrap;
+}
+div.commentAction label
+{
+	margin: auto 5px;
+	border:  solid 1px var(--colorPrincipal);
+	border-radius: 20px;
+	padding: 5px 10px;
+	font-size: var(--textSize);
+}
+
+/*Liste des reponses de commentaire*/
+ul.replyComments
+{
+	display: none;
+	margin: 10px auto;
+	width: 90%;
+}
+
+
+
+
+
+@media screen and (max-width: 576px)
+{
+	div.productDetails
+	{
+		flex-direction: column;
+		width: 98%;
+	}
+	div.pdImgSlide
+	{
+		width: 95%;
+	}
+	div.pdisgImg img
+	{
+		object-fit: contain;
+	}
+	div.pdTextInfos
+	{
+		width: 95%;
+	}
+}

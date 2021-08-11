@@ -1,0 +1,240 @@
+body{
+	font-family: var(--myFont1);
+}
+button.sfreinitForm,button.pfreinitForm
+{
+	background-color: var(--colorWhite2);
+}
+/*Partie produit Trou ver apres recherche*/
+div.nbProductFind
+{
+	width: 100%;
+	background-color: var(--colorScLow2);
+	font-family: var(--myFont1);
+	padding: 15px 0;
+}
+div.nbProductFind p
+{
+	margin-left: 20px;
+	color: var(--colorWhite2);
+}
+
+/*Partie boutton de filtre*/
+div.productFilter
+{
+	margin: 20px 0;
+	width: 100%;
+}
+div.pfBtnDiv
+{
+	width: 100%;
+	background-color: var(--colorWhite1);
+	text-align: right;
+}
+div.pfBtnDiv button
+{
+	margin-right: 2%;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	border-radius: 30px;
+}
+
+/*Modal filtre page des produits*/
+div#pfModal
+{
+	
+}
+div.pfModalBody
+{
+	/*z-index: 99999999 !important;*/
+	overflow-y: auto;
+	width: var(--modalResponsive);
+	background-color: var(--colorWhite1);
+}
+div.pfModalBody form
+{
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: var(--colorWhite1);
+	overflow-y: auto;
+	height: 60vh;
+	max-height: 95vh;
+}
+div.pfmFormField
+{
+	position: relative;
+	margin: 10px auto;
+	font-family: var(--myFont1);
+	display: flex;
+	flex-direction: column;
+}
+/*div.pfmFormField:nth-child(1),div.pfmFormField:nth-child(2),div.pfmFormField:nth-child(3)
+{
+	width: 95%;
+}*/
+div.pfmFormField
+{
+	width: 95%;
+}
+div.pfmFormField input[type="radio"]
+{
+	/*display: none;*/
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+div.pfmFormField input[type="radio"]:checked+label
+{
+	background-color: var(--colorPrincipal);
+	color: var(--colorWhite1);
+}
+#radioDateSlt
+{
+	background-color: var(--colorPrincipal);
+	color: var(--colorBlack1);
+}
+ul.chkDates,ul.chkLoves,ul.chkEtat
+{
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 10px auto;
+}
+ul.chkDates li, ul.chkLoves li, ul.chkEtat li
+{
+	margin: 0;
+	box-sizing: border-box;
+	height: var(--btnHeight);
+	height: 40px;
+	padding: 0 8px;
+	display: flex;
+	align-items: center;
+}
+ul.chkDates label, ul.chkLoves label, ul.chkEtat label
+{
+	padding: 0px 6px;
+	height: 80%;
+	display: flex;
+	align-items: center;
+	background-color: var(--colorWhite2);
+	border-radius: 20px;
+	transition: all 0.4s ease;
+}
+ul.chkLoves label
+{
+	display: flex;
+	justify-content: center;
+}
+div.pfmFormField label
+{
+	width: 100%;
+}
+div.pfmFormField input
+{
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	border-bottom: solid 1px var(--colorOverlay2);
+	/*background-color: transparent;*/
+}
+div.pfmFormField input:focus
+{
+	/*border: solid 1px var(--colorPrincipal);*/
+}
+#pfmFormFieldPrice > label:first-child
+{
+	width: 100%;
+	text-align: center;
+}
+#pfmFormFieldPrice > div
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: auto;
+}
+#pfmFormFieldPrice > div > div
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 40%;
+	margin: auto;
+}
+#pfmFormFieldPrice > div > div > input
+{
+	width: 100%;
+}
+div.pfmFormFieldBtn
+{
+	display: none;
+}
+
+
+/*Partie de rangement des produits*/
+div.elementRange
+{
+	width: 95%;
+	margin: 10px auto;
+}
+div.erBtnDiv
+{
+	width: 20%;
+	position: relative;
+}
+div.erBtnDiv input
+{
+	width: 100%;
+	border-bottom: solid 1px var(--colorWhite3);
+}
+ul.scRanges
+{
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	box-sizing: border-box;
+	top: 100%;
+	background-color: var(--colorWhite1);
+}
+ul.scRanges li
+{
+	padding: 10px 10px;
+}
+ul.scRanges li:hover
+{
+	background-color: var(--colorPrLow3);
+}
+
+.elementCardList
+{
+	width: 100%;
+	background-color: var(--bgElement);
+}
+div.eclCards
+{
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.eclCards a
+{
+	margin: 10px auto !important;
+}
+
+div.seeMoreProduct
+{
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	background-color: var(--bgElement);
+}

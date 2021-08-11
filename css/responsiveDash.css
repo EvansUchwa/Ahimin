@@ -1,0 +1,133 @@
+@media screen and (max-width: 576px)
+{
+	
+	div.cp1Head
+	{
+		height: 150px;
+	}
+	a.cardProduct1
+	{
+		width: 150px !important;
+	}
+	a.cardProduct2
+	{
+		width: 250px !important;
+	}
+	div.cp2rHead p:first-child
+	{
+		
+	}
+	div.cp2rFoot p
+	{
+		font-size: 14px;
+	}
+
+
+
+	div.dashAdd
+	{
+		width: 95%;
+	}
+	div.dafFilesSelect label
+	{
+		margin: 10px auto;
+	}
+	/*Pour le boutton poster article*/
+	div.postArticle
+	{
+		display: none;
+	}
+	div.bottomBanner
+	{
+		font-family: var(--myFont1);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--colorSecond);
+		height: calc(var(--btnHeight) * 1.5);
+		transition: all 0.5s ease;
+	}
+	div.bottomBanner > div
+	{
+		width: 20%;
+		color: var(--colorWhite1);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	div.bottomBanner div a
+	{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		font-size: calc(var(--textSize) * 1.5);
+		color: var(--colorWhite1);
+		position: relative;
+	}
+	div.bottomBanner > div span
+	{
+		cursor: pointer;
+		font-size: calc(var(--textSize) * 1.5);
+		position: relative;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	div.bottomBanner > div:nth-child(2) span:after,div.bottomBanner > div:nth-child(1) a:after
+	{
+		width: 100%;
+		left: 0;
+		right: 0;
+		content: var(--activeNavLink);
+		position: absolute;
+		bottom: 0%;
+		font-size: calc(var(--textSize) * 0.6);
+		color: red;
+		border-bottom: solid 1px var(--colorPrincipal);
+	}
+
+
+	/*Pour la page membre*/
+	div.aaTitle label
+	{
+		margin: auto 10px;
+	}
+	div.authentificationArea
+	{
+		width: 90%;
+	}
+	div.authentificationArea form div.formField input
+	{
+		width: 90%;
+	} 
+	div#ffProfilStName,div#ffProfilSexes,div#ffProfilStatus,div#ffCitys
+	{
+		width: 90%;
+	}
+
+	
+}
+/*Format tablette*/
+@media screen and (min-width: 576px) and (max-width: 768px)
+{
+	
+}
+		/*Format petit pc*/
+		@media screen and (min-width: 768) and (max-width: 992px)
+		{
+			
+		}
+		/*Format pc moyen et grand*/
+		@media screen and (min-width: 992) and (max-width: 1200px)
+		{
+			
+		}
+		/*Format desktop et tv plasma*/
+		@media screen and (min-width: 1200px)
+		{
+			
+		}

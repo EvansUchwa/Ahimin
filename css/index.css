@@ -1,0 +1,451 @@
+
+body
+{
+	font-family: 'Poppins-Regular';
+}
+input
+{
+	color: var(--colorWhite1);
+}
+div.pageContent
+{
+	/*background-color: #f4f6f7;*/
+}
+div.indexbanner
+{
+	height: calc(100vh - var(--navHeight));
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	background-image: url('../img/png/23.png') ;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-color: var(--colorPrincipal);
+	background-size: 50vw;
+	padding: 20px 0 100px 0;
+}
+
+
+
+div.ibTitle
+{
+	/*display: none;*/
+	position: absolute;
+	top: 20%;
+	right: 10%;
+	width: 80%;
+	text-align: left;
+	color: var(--colorWhite1);
+}
+div.ibTitle h1
+{
+	font-size: calc(var(--textSize) * 2);
+}
+div.ibTitle p
+{
+	margin: 10px 0 20px 0;
+}
+div.ibTitle a
+{
+	color: white;
+}
+div.ibTitle div button
+{
+	margin: 10px 5px;
+	border-radius: 100px;
+	padding: 0px 10px;
+	font-size: calc(var(--textSize) );
+	/*background-color: #F6DF9E;*/
+	background-color: #6186b8;
+}
+div.ibTitle div button:last-child
+{
+	/*background-color: var(--colorWhite1);*/
+	/*background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);*/
+	background-color: #ECF2FB;
+}
+
+div.nsrSearch
+{
+	
+}
+
+
+div#ibsfDroperCategorys,div#ibsfDroperSubCategorys
+{
+	position: relative;
+}
+ul.ibsfCategorys,ul.ibsfSubCategorys
+{
+	display: none;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+	position: absolute;
+	width: 105%;
+	max-height: 200px;
+	overflow-y: auto;
+	left: 0;
+	right: 0;
+	top: 105%;
+	display: flex;
+	flex-direction: column;
+	z-index: 1000;
+}
+li.ibsfCategory,li.ibsfSubCategory
+{
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 5px;
+	cursor: pointer;
+}
+
+
+
+.rotateIcon
+{
+	transition: transform 0.4s ease;
+	font-size: 22px;
+}
+
+
+
+
+div.ProductByCategorie
+{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	top: 70%;
+	background-color: var(--colorWhite1);
+	padding: calc(var(--textSize) * 2) 0px;
+	margin: 50px auto;
+}
+div.pbcTitle
+{
+	color: var(--colorWhite3);
+	text-align: center;
+	width: 100%;
+	font-size: calc(var(--textSize) * 2);
+}
+
+
+div.elementCategories
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+	background-image: url('../img/svg/sv1.svg');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 50vh;
+}
+div.ecTitle:before
+{
+	content: '';
+	position: absolute;
+	width: 10%;
+	top: -50%;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 5px;
+	background-color: var(--colorPrincipal);
+}
+div.ecTitle
+{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin: 50px 0;
+}
+div.ecImg
+{
+	width: 40%;
+	display: flex;
+	/*margin: auto;*/
+}
+div.ecImg img
+{
+	height: 300px;
+	width: 100%;
+}
+div.ecCategories
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	width: 40%;
+}
+div.eclabel
+{ 
+	width: 45%;
+	margin: 0 auto 20px auto;
+	text-align: center;
+}
+div.eclabel label
+{ 
+	background-color: var(--colorWhite2);
+	padding: 8px 12px;
+}
+div.ecCategories input[type="radio"]
+{
+	display: none;
+}
+div.ecCategories input[type="radio"]:checked+ div label
+{
+	background-color: var(--colorPrincipal);
+	color: white;
+}
+#ecP:checked ~ div.ecProduit,#ecS:checked ~ div.ecService
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+div.ecProduit,div.ecService
+{
+	display: none;
+}
+div.ecProduit a,div.ecService a
+{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	font-size: var(--textSize);
+	color: var(--colorSecond);
+	padding: 10px 0;
+	border-bottom: solid 1px var(--colorWhite2);
+}
+
+
+
+
+div.whyPost
+{
+	padding: 10px 0 0 0;
+	width: 90%;
+	margin: 0 auto 20px auto;
+}
+div.wpTitle
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+div.wpTitle h2
+{
+	color: var(--colorSecond);
+}
+div.wpTitle img
+{
+	height: 200px;
+	object-fit: cover;
+}
+div.wpRaisons
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	/*flex-direction: row;*/
+	align-items: flex-start;
+}
+div.wpRaisons div
+{
+	width: 30%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+div.wpRaisons div i
+{
+	font-size: calc(var(--textSize) * 4);
+	height: calc(var(--textSize) * 2);
+	width: calc(var(--textSize) * 2);
+	border-radius: calc(var(--textSize) * 2);
+	margin: auto;
+	background-color: var(--colorPrincipal);
+	color: white;
+	transition: all 0.5s ease;
+}
+div.wpRaisons div i:hover
+{
+	transform: translateY(-10px);
+}
+div.wpRaisons div span
+{
+	font-size: calc(var(--textSize) * 1.2);
+	font-weight: bold;
+	margin: 20px auto;
+	color: var(--colorScLow2);
+}
+div.wpRaisons div p
+{
+	
+}
+div.wpBtn 
+{
+	margin: 40px 0;
+	text-align: center;
+}
+div.wpBtn button
+{
+	text-align: center;
+	background-color: var(--colorScLow2);
+}
+div.wpBtn button a
+{
+	color: var(--colorWhite1);
+}
+
+/*Testi*/
+div.userVisitorPart
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 150px 0 30px 0;
+	background-image: url('../img/Bg/path2.png');
+	background-position: top;
+	background-size: 100vw;
+	background-repeat: no-repeat;
+}
+div.uvpNumber
+{
+	text-align: center;
+	margin-top: 30px;
+	color: var(--colorWhite1);
+	font-size: calc(var(--textSize) * 1.1);
+	font-weight: 600;
+	width: 90%;
+	margin: auto;
+}
+div.uvpComments
+{
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	margin: 20px auto 10px auto;
+}
+div.uvpCom
+{
+	display: flex !important;
+	flex-direction: column;
+	margin-left: 500px !important;
+	margin-right: 500px !important;
+	width: 40vw !important;
+	border-radius: 20px;
+	background-color: var(--colorSecond);
+}
+div.uvpCom i:nth-child(1)
+{
+	font-size: calc(var(--textSize) * 4);
+	height: calc(var(--textSize) );
+	width: calc(var(--textSize));
+	color: var(--colorWhite1);
+	border-radius: 10px;
+	margin-left: 10px;
+}
+div.uvpCom img
+{
+	margin-left: auto;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: calc(var(--textSize) * 4);
+	height: calc(var(--textSize) * 4);
+	border-radius: calc(var(--textSize) * 4);
+}
+div.uvpCom div:nth-child(2)
+{
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	color: var(--colorWhite1);
+	font-size: calc(var(--textSize));
+}
+div.uvpCom div span
+{
+	color: var(--colorWhite4);
+}
+
+
+
+
+
+
+
+
+#loaderModalResult
+{
+	display: none;
+}
+/*Page de validation de compte*/
+div.validateAccountAnim
+{
+	/*background-color: pink;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 20px 0;
+}
+div.validateAccountAnim img
+{
+	height: calc(var(--textSize) * 8);
+	object-fit: contain;
+}
+div.validateAccountAnim div
+{
+	margin: 20px 0;
+	display: none;
+}
+div.validateAccountAnim p
+{
+	font-size: calc(var(--textSize) * 1.5);
+	font-weight: bolder;
+}
+div.validateAccountAnim button
+{
+	margin: auto;
+}
+div.validateAccountAnim button a
+{
+	color: var(--colorWhite1);
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px)
+{
+	div.wpRaisons div
+	{
+		width: 90%;
+		margin: 20px auto;
+	}
+	div.uvpCom
+	{
+		width: 80vw !important;
+	}
+}

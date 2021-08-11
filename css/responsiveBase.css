@@ -1,0 +1,327 @@
+@media screen and (max-width: 576px)
+{
+	:root
+	{
+		--navHeight: 100px;
+		--quartResponsive:  100%;
+		--modalResponsive: 90%;
+		--radiusCircle2:  30px;
+		--profilImgNav: 40px;
+		--imageIconRadius: 20px;
+		--imageUpSize: 100px;
+		--imagesUpSize: 100px;
+		--btnActionPadding: 8px;
+		/*--inputHeight: 30px;*/
+		--modalSize: 90%;
+		--authDiv: 90%;
+	}
+	
+	div.nsrPcLink
+	{
+		display: none;
+	}
+	/*Menu Android*/
+	div.mobileHmb
+	{
+		margin: auto;
+	    margin-right: 10px;
+	    background-color: var(--colorPrincipal);
+	    width: 45px;
+	    height: 45px;
+	    border-radius: 100%;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	#mhmbBars
+	{
+	    width: 80%;
+	    z-index: 9999;
+	}
+	#chkHmb:checked ~ ul.mhmbLink
+	{
+	    height: auto;
+	    overflow: auto;
+	    max-height: 500vh;
+	}
+	#mhmbBars > div
+	{
+	    margin: 5px auto;
+	    width: 100%;
+	    height: 3px;
+	    background-color: #0f3048;;
+	}
+	#chkHmb:checked ~ ul.mhmbLink
+	{
+	    height: 100vh;
+	    max-height: 5000vh;
+	    overflow-y: auto;
+	    overflow-x: hidden !important;
+	}
+	ul.mhmbLink
+	{
+	    max-height: 0;
+	    height: 0;
+	    overflow: hidden;
+	    transition: all 0.5s ease;
+	   position: fixed;
+	   width: 100%;
+	   left: 0;
+	   right: 0;
+	   top: 0;
+	   background-color: #0f3048;;
+	   display: flex;
+	   flex-direction: column;
+	   /*align-items: center;
+	   justify-content: center;*/
+	}
+	ul.mhmbLink section
+	{
+		display: flex;
+	    width: 100%;
+	    color: white;
+	    padding: 20px 0;
+	}
+	ul.mhmbLink section label
+	{
+	   margin-left: 1%;
+	}
+	ul.mhmbLink a
+	{
+	    color: white;
+	    width: 100%;
+	    margin: 10px 0px 10px 2%;
+	    font-size: 22px;
+	}
+	ul.mhmbLink li
+	{
+	    display: flex;
+	    flex-direction: column;
+	    width: 100%;
+	    margin: 20px auto;
+	    font-size: 22px;
+	    color: white !important;
+	    box-sizing: border-box;
+	}
+	ul.mhmbLink li > label
+	{
+	    margin-left: 2%;
+	    padding: 20px 0;
+	}
+	ul.mhmbLink div > label
+	{
+	    color: white !important;
+	   padding: 20px 0px;
+	   margin-left: 5%;
+	}
+	ul.mhmbLink div
+	{
+	    width: 100%;
+	   display: flex;
+	   flex-direction: column;
+	   max-height: 0;
+	   height: 0;
+	   transition: all 0.8s ease-out;
+	   overflow: hidden;
+	   background-color: #0d2a3f;
+	}
+	ul.mhmbLink div div
+	{
+	   background-color: #091c2a;
+	}
+	ul.mhmbLink div a
+	{
+	   padding: 5px 0;
+	   margin-left: 5%;
+	   width: 100%;
+	   color: var(--colorWhite1);
+	}
+	ul.mhmbLink div div a
+	{
+	   padding: 20px 0;
+	}
+
+	ul.mhmbLink input[type="checkbox"]:checked + div
+	{
+	    height: auto;
+	    max-height: 5000px;
+	}
+
+	ul.mhmbLink li:last-child
+	{
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	}
+	ul.mhmbLink li:last-child a
+	{
+	    width: 45%;
+	    margin: auto;
+	    background-color: #ffc423;
+	    text-align: center;
+	    padding: 10px 0;
+	}
+	/*Pour la partie formulaire sur le dashboard*/
+	form.navSearchForm
+	{
+		padding: 0 !important;
+		width: 95%;
+	}
+	form.navSearchForm div:nth-child(1)
+	{
+		width: 30%;
+		/*background-color: red;*/
+	}
+	form.navSearchForm div:nth-child(1) input
+	{
+		
+	}
+	form.navSearchForm input:nth-child(2)
+	{
+		width: 60%;
+	}
+	form.navSearchForm button
+	{
+		width: 10%;
+	}
+	form.navSearchForm
+	{
+		padding: 0 !important;
+		width: 95%;
+	}
+	form.navSearchForm div:nth-child(1)
+	{
+		width: 30%;
+		/*background-color: red;*/
+	}
+	form.navSearchForm div:nth-child(1) input
+	{
+		
+	}
+	form.navSearchForm input:nth-child(2)
+	{
+		width: 60%;
+	}
+	form.navSearchForm button
+	{
+		width: 10%;
+	}
+	div.cp1Head
+	{
+		height: 150px;
+	}
+	a.cardProduct1
+	{
+		width: 150px !important;
+	}
+	a.cardProduct2
+	{
+		height: 100px;
+		width: 95%;
+	}
+	div.cp2rHead p:first-child
+	{
+		
+	}
+	div.cp2rFoot p
+	{
+		font-size: 14px;
+	}
+
+
+
+
+
+
+
+
+	/*Page filtre*/
+	div.erBtnDiv
+	{
+		width: 100%;
+	}
+
+
+	div.dashAdd
+	{
+		width: 95%;
+	}
+
+
+	/*Pour le boutton poster article*/
+	div.postArticle
+	{
+		display: none;
+	}
+	/*Page des question*/
+	div.questionTypeListe
+	{
+		width: 90%;
+	}
+
+	/*Pour la page membre*/
+	div.aaTitle label
+	{
+		margin: auto 10px;
+	}
+	div.authentificationArea
+	{
+		width: 90%;
+	}
+	div.authentificationArea form div.formField input
+	{
+		width: 90%;
+	} 
+	div#ffProfilStName,div#ffProfilSexes,div#ffProfilStatus,div#ffCitys
+	{
+		width: 90%;
+	}
+
+	footer
+	{
+		
+	}
+	footer .footLogoSocial
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	footer .footHelpService
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	footer .footUtilityLink
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	footer .footLegalInfo
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+}
+/*Format tablette*/
+@media screen and (min-width: 576px) and (max-width: 768px)
+{
+	a.cardProduct2
+	{
+		width: 200px;
+	}
+}
+		/*Format petit pc*/
+		@media screen and (min-width: 768) and (max-width: 992px)
+		{
+			
+		}
+		/*Format pc moyen et grand*/
+		@media screen and (min-width: 992) and (max-width: 1200px)
+		{
+			
+		}
+		/*Format desktop et tv plasma*/
+		@media screen and (min-width: 1200px)
+		{
+			
+		}

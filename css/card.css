@@ -1,0 +1,190 @@
+a.cardProduct1
+{				
+	margin: 20px !important;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	width: 200px !important;
+	color: var(--colorBlack2);
+	box-sizing: border-box;
+	background-color: var(--colorWhite1);
+}
+div.cp1Head
+{
+	width: 100%;
+	height: 200px;
+}
+a.cardProduct1 img
+{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+div.cp1Body
+{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+div.cp1Body p:first-child
+{
+	font-weight: 600;
+	font-size: var(--textSize);
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+}
+div.cp1Body p:last-child
+{
+	font-size: var(--textSize);
+}
+div.cp1Foot
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 95%;
+	margin: auto;
+	padding: 10px 0;
+}
+div.cp1Foot p:first-child
+{
+	display: flex;
+}
+
+p.cp1TimeInfo
+{
+	font-size: var(--textSize);
+	padding: 5px;
+	background-color: var(--colorPrLow1);
+	color: var(--colorWhite1);
+	border-top-left-radius: 999999px;
+	border-bottom-left-radius: 999999px;
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+a.cardProduct1:hover div.actionBtn
+{				
+	opacity: 1;
+	transform: translateY(0);
+}
+div.actionBtn
+{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(12, 12, 12, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: all 0.4s ease;
+}
+div.actionBtn label
+{
+	background-color: orange !important;
+	font-size: var(--textSize);
+	width: calc(var(--textSize) + 20px);
+	height: calc(var(--textSize) + 20px);
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 10px auto;
+}
+
+
+
+div.card2List
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+a.cardProduct2
+{
+	margin: 20px !important;
+	display: flex !important;
+	flex-direction: row;
+	box-sizing: border-box;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	/*min-width: 220px !important;*/
+	/*max-width: 400px !important;*/
+	width: 400px !important;
+	height: 130px;
+	color: var(--colorBlack2);
+}
+div.cp2left
+{
+	height: 95%;
+	margin: auto;
+	width: 30%;
+}
+div.cp2left img
+{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+div.cp2Right
+{
+	height: 100%;
+	width: 65%;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+}
+div.cp2rHead
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: auto;
+}
+div.cp2rHead p:first-child
+{
+	font-weight: 600;
+	font-size: calc(var(--textSize) * 1.1);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 70%;
+	overflow: hidden;
+}
+div.cp2rHead p:last-child
+{
+	display: flex;
+}
+div.cp2rBody 
+{
+	margin: auto 0;
+	font-size: var(--textSize);
+}
+div.cp2rFoot
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: auto auto 5px auto;
+	box-sizing: border-box;
+}
+
+div.cp2rFoot p:last-child
+{
+	background-color: var(--colorPrLow1);
+	color: var(--colorWhite1);
+	border-top-left-radius: 999999px;
+	border-bottom-left-radius: 999999px;
+	padding: 5px;
+
+}

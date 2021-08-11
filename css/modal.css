@@ -1,0 +1,290 @@
+div.modalHeader
+{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-family: var(--myFont1);
+	font-weight: bolder;
+	/*box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;*/
+	position: relative;
+	display: flex;
+	align-items: center;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+div.modalHeader i
+{
+	margin-left: auto;
+	margin-right: 10px;
+	font-size: calc(var(--textSize) + 15px);
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	background-color: var(--colorPrincipal);
+	color: var(--colorBlack1);
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+div.modalHeader span
+{
+	margin-left: 10px;
+	font-size: calc(var(--textSize) + 10px);
+	color: var(--colorPrincipal);
+}
+/**/
+div.modalHeaderAbsolute
+{
+	width: 100%;
+	height: 60px;
+	font-family: var(--myFont1);
+	font-weight: bolder;
+	position: relative;
+}
+div.modalHeaderAbsolute p
+{
+	position: absolute;
+	background-color: var(--modalFormBg);
+	bottom: -50%;
+	left: 50%;
+    transform: translate(-50%);
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.modalHeaderAbsolute p span
+{
+	font-size: calc(var(--textSize) * 2);
+	margin-left: 0;
+}
+
+
+div.modal
+{
+	display: none;
+	z-index: 10000000;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	height: 100%;
+	left: 0;
+	right: 0;
+	background-color: rgba(12,12,13,0.7);
+	font-family: var(--myFont1);
+}
+div.modal div:first-child
+{
+	border-radius: 20px;
+}
+div.modalFooter
+{
+	background-color: var(--colorWhite1);
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	/*margin-top: 10px;*/
+}
+div.modalFooter button:first-child
+{
+	margin: auto 10px auto 0px;
+}
+div.modalFooter button:last-child
+{
+	margin: auto 20px auto 0px;
+	/*background-color: var(--modalFormBg);*/
+}
+
+div.modalFooterAbsolute
+{
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: var(--colorWhite3);
+	overflow: hidden;
+}
+div.modalFooterAbsolute button
+{
+	width: 100%;
+	background-color: var(--modalFormBg);
+}
+
+
+
+/*Les modal*/
+.formModalBody
+{
+	width: var(--modalResponsive);
+}
+.fmResult
+{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding: 30px 10px;
+	background-color: var(--colorWhite1);
+	text-align: center;
+}
+.fmResult h2
+{
+	
+}
+.fmResult p
+{
+	font-size: var(--textSmallSize);
+}
+
+
+div#noticeModalResult
+{
+	display: none;
+}
+
+
+
+
+
+/*Pour les modal du menu android*/
+div.mctpBody,div.mcppBody,div.mcspBody
+{
+	background-color: var(--colorWhite1);
+	width: var(--modalResponsive);
+	/*background-color: var(--colorPrLow1);*/
+	border-radius: 20px;
+}
+div.mctp,div.mcpp,div.mcsp
+{
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/*align-items: center;*/
+	text-align: center;
+	border-radius: 20px;
+}
+div.mctp img,div.mcpp img,div.mcsp img
+{
+	height: 100px;
+	object-fit: contain;
+	/*background-color: red;*/
+}
+
+div.mcpp p,div.mcsp p
+{
+	width: 80%;
+	margin: auto;
+	border-bottom: solid 1px var(--colorPrincipal);
+}
+div.mctp div,div.mcpp div,div.mcsp div
+{
+	/*background-color: yellow;*/
+	width: 100%;
+	margin: 30px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.mctp a,div.mcpp a,div.mcsp a
+{
+	color: var(--colorWhite1);
+	margin: 10px auto;
+	padding: 10px 0;
+	text-align: center;
+	width: 40%;
+	background-color: var(--colorSecond);
+	border-radius: 30px;
+}
+div.mcpp a:last-child,div.mcsp a:last-child
+{
+	width: 80%;
+}
+div.mctp a i
+{
+	font-size: calc(var(--textSize) + 5px);
+	margin-right: 5px;
+}
+
+
+/*Modal pour les action sur profil ou element*/
+div#elementAction
+{
+	/*display: flex;*/
+}
+div.evaBody
+{
+	background-color: white;
+	width: var(--modalResponsive) !important;
+}
+div.evaResult
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+}
+div.evaResult div,div.evaResult form
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 20px 0;
+}
+div.evaResult div
+{
+	text-align: center;
+}
+
+div.evaResult div p
+{
+	font-size: calc(var(--textSize) * 1.2);
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+div.evaResult section span,div.evaResult section a
+{
+	display: inline-block;
+	line-height: var(--btnHeight);
+	height: var(--btnHeight);
+	color: white;
+	font-weight: bold;
+	margin: 0 30px;
+}
+div.evaResult section span
+{
+	width: var(--btnHeight);
+	border-radius: 100%;
+}
+div.evaResult section a
+{
+	background-color: var(--colorSecond);
+	padding: 0 10px;
+	border-radius: 50px;
+}
+div.evaResult div section span:first-child
+{
+	text-align: center;
+	background-color: var(--successColor);
+}
+div.evaResult div section span:last-child
+{
+	text-align: center;
+	background-color: var(--errorColor);
+}
+
+div.evaResult form
+{
+	width: 100%;
+	font-weight: bold;
+}
+div.evaResult form label
+{
+	font-size: calc(var(--textSize) * 1.2);
+	font-weight: bold;
+}

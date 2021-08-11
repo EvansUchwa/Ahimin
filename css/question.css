@@ -1,0 +1,129 @@
+html,body
+{
+	margin: 0;
+	padding: 0;
+	font-family: var(--myFont1);
+}
+div.emptyDv
+{
+	height: 100px;
+	width: 100%;
+}
+div.qresponseTitle
+{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+h1
+{
+	display: none;
+	text-decoration: underline;
+	color: var(--colorPrincipal);
+}
+ul li
+{
+	font-weight: bold;
+}
+div.pageContent
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+div.questionImg
+{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ background: rgb(252,192,0);
+background: linear-gradient(90deg, rgba(252,192,0,1) 41%, rgba(253,225,1,1) 57%); 
+	height: 40vh;
+}
+div.questionImg img
+{
+	height: 100%;
+	/*height: 40vh;
+	height: 40vh;
+	border-radius: 40vh;
+	object-fit: cover;*/
+}
+.qr
+{
+	/*display: none;*/
+	height: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	margin: auto;
+}
+h2,h3,h4,h5
+{
+	text-align: center;
+}
+i
+{
+	display: initial;
+}
+
+
+
+ol
+{
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	transition: all 0.5s ease;
+	/*margin: 0;*/
+	/*padding: 0 5px;*/
+	width: 100%;
+	box-sizing: border-box;
+}
+ol li
+{
+	font-size: calc(var(--textSize) * 1.1);
+}
+input[type="checkbox"]
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+input[type="checkbox"]:checked + ol 
+{
+	height: auto;
+	opacity: 1;
+}
+
+
+div.questionTypeListe
+{
+	width: 50%;
+	margin: 20px auto;
+}
+div.questionTypeListe label
+{
+	padding: 0;
+	margin: 0;
+	background-color: var(--colorScLow2);
+	color: var(--colorWhite1);
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	margin: auto;
+	font-size: calc(var(--textSize) * 1.2);
+}
+
+div.questionTypeListe a
+{
+	color: var(--colorScLow1);
+	font-size: calc(var(--textSize) * 1);
+}
+div.questionTypeListe a:hover
+{
+	color: var(--colorPrincipal);
+}

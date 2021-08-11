@@ -1,0 +1,261 @@
+:root
+{
+	--logImgBan: 100px;
+	--authDiv: 50%;
+}
+body
+{
+	font-family: var(--myFont1);
+	background-color: var(--colorSecond);
+}
+nav.navbar,footer,div.nsrSearch,div.bottomBanner
+{
+	display: none !important;
+}
+.usrIcon
+{
+	background-image: url('../img/png/user.png');
+	background-repeat: no-repeat;
+	background-size: 8%;
+	background-position: right;
+}
+.psdIcon
+{
+	background-image: url('../img/png/password.png');
+	background-repeat: no-repeat;
+	background-size: 8%;
+	background-position: right;
+}
+#mailIcon
+{
+	background-image: url('../img/png/mail.png');
+	background-repeat: no-repeat;
+	background-size: 8%;
+	background-position: right;
+}
+
+.authPageContent
+{
+	transition: all 0.5s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+	max-height: 150vh;
+	margin: 0;
+}
+.auth2PageContent
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+	max-height: 150vh;
+}
+
+
+div.authPageLogo
+{
+	width: 100%;
+}
+div.authPageLogo img
+{
+	height: var(--logImgBan);
+	object-fit: cover;
+}
+div.authentificationArea input[type="radio"]
+{
+	display: none;
+}
+div.authentificationArea
+{
+	height: auto;
+	width: 50%;
+	transition: all 0.5s ease;
+	padding: calc(var(--textSize) * 2) 0;
+	margin: auto;
+}
+div.aaTitle
+{
+	width: 100%;
+	text-align: center;
+}
+div.aaTitle label
+{
+	color: var(--colorWhite3);
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	font-size: calc(var(--textSize) * 1.2);
+	font-weight: 900;
+	margin: auto 20px;
+}
+div.aaTitle span
+{
+	color: var(--colorWhite1);
+}
+
+
+/*div.authentificationArea button
+{
+	background-color: var(--colorPrincipal);
+}*/
+div.authentificationArea form 
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+}
+div.authentificationArea form div.formField
+{
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+}
+div#ffProfilStName,div#ffProfilSexes,div#ffProfilStatus,div#ffCitys
+{
+	width: 40%;
+	position: relative;
+}
+div#ffProfilStName ul ,div#ffProfilSexes ul ,div#ffProfilStatus ul,div#ffCitys ul
+{
+	background-color: var(--colorBlack2);
+	color: var(--colorWhite1);
+}
+div#ffProfilStName input,div#ffProfilSexes input,div#ffProfilStatus input,div#ffCitys input
+{
+	width: 100%;
+}
+
+div.authentificationArea form div.formField input
+{
+	width: 40%;
+	margin: auto;
+	border-bottom: solid 1px var(--colorWhite3);
+	background-color: transparent;
+	color: var(--colorWhite3);
+} 
+div.formBtn
+{
+	margin: 15px 0;
+	width: 100%;
+	text-align: center;
+}
+div.formBtn button
+{
+	padding: 0 10px;
+	border-radius: 50px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--colorPrincipal);
+	color: var(--colorSecond);
+
+}
+div.formBtn button i,div.formBtn button img
+{
+	height: 30px;
+	width: 30px;
+	border-radius: 40px;
+	background-color: var(--colorSecond);
+	color: var(--colorPrincipal);
+	margin-left: 20px;
+}
+div.formBtn button img
+{
+	/*height: 100%*/
+}
+
+div.footForm
+{
+	padding: 10px 0;
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: calc(var(--textSize) * 0.8);
+	color: white;
+}
+div.footForm a
+{
+	color: white;
+}
+div.rememberMe
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+div.rememberMe input
+{
+	display: flex;
+}
+div.aaOtherLogin
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+div.aaOtherLogin p
+{
+	font-weight: bold;
+	padding: 10px 15px;
+	margin: auto;
+	border-radius: var(--inputHeight);
+	background-color: #dd4b39;
+	color: var(--colorWhite1);
+}
+
+
+#connexionRadio:checked ~ div.aaTitle label:first-child
+{
+	color: var(--colorPrincipal);
+}
+#connexionRadio:checked ~ div.aaLogin
+{
+	visibility: visible;
+	opacity: 1;
+	overflow: hidden;
+	height: 100%;
+}
+div.aaLogin,div.aaSignin
+{
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+	transition: all 1s ease;
+	text-align: center;
+}
+#inscriptionRadio:checked ~ div.aaTitle label:last-child
+{
+	color: var(--colorPrincipal);
+	overflow: hidden;
+}
+#inscriptionRadio:checked ~ div.aaSignin
+{
+	visibility: visible;
+	opacity: 1;
+	overflow: hidden;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

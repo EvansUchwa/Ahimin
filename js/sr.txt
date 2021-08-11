@@ -1,0 +1,17 @@
+Menage,Cuisine,Bricolage,Gardiennage,Autre
+
+ 	Covoiturage,Course,Livraison,Babysitting ou Nounou,Autre
+
+ 	Styliste,Couturier(ère),Manequinnat,Autre 	
+
+ 	Repetiteur,Coach,Sportif,Coach Personnel,Autre Formation 
+
+ 	Photographie et Videos,Infographie et Design,Montage,Autre
+
+ 	Maintenance,Reseaux,Surveillance,Creation de Site Web,Creation d'application Mobile,Creation de Logiciel
+
+	Manicure et Pedicure,Coiffure,Massage 	
+
+	Service Traiteur,Sonorisatin(Dj),Decoration(Bache etc..) 
+
+	Restaurant,Bar,Cafeteria,Autre

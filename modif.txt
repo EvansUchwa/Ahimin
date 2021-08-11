@@ -1,0 +1,35 @@
+
+Faire la page A propos
+
+http://ahime.rf.gd/
+
+F0+8$3nru@xMyb83
+
+
+
+changer le hover des icones
+
+le select des villes, le cadrer beaucoup plus au centre
+rapprocher "connexion" et la flèche 
+
+
+
+Faire un systeme de produit et service similaire
+
+Faire un systeme de voir les autre produit de l'intervenant
+
+
+Pour les categorie de service
+Aide a domicile: Agent d'entretien
+Mode: Modele photos
+
+Santé: Maquillage
+
+Art: 
+Dessinateur
+Sculpteur
+Artiste peintre
+Tisserand
+
+Sport: Salle de gym
+

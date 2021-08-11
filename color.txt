@@ -1,0 +1,16 @@
+orange: #f7941d
+rougevin: #f46b49
+vert: #6ee89f
+
+
+if ($this->insertObject('loves(userId)',
+								'(:userId)',
+								['userId'=>$_SESSION['id']])) 
+		{
+			return $this->updateObject('produits','loves = :loves WHERE id ='.$productId,
+											['love'=>$numero]);
+		}
+		else
+		{
+
+		}

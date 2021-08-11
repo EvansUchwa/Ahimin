@@ -1,0 +1,26 @@
+AddDefaultCharset utf-8
+Options -MultiViews
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([^/]+)$ index.php?url=$1 [L,QSA]
+
+RewriteRule ^([^/]+)/([0-9]+)$ index.php?url=$1&elementId=$2 [L,QSA]
+
+RewriteRule ^([^/]+)/(Ahime_[-a-zA-Z0-9]+)$ index.php?url=$1&token=$2 [L,QSA]
+
+RewriteRule ^([^/]+)/(Connexion|Inscription)$ index.php?url=$1&typeAuth=$2 [L,QSA]
+
+RewriteRule ^([^/]+)/(Produits|Services)/keyword=([a-zA-Z-\s]+)$ index.php?url=$1&typeSearch=$2&keyword=$3 [L,QSA]
+
+RewriteRule ^([^/]+)/(Produits|Services)/All/([a-zA-Z-\s]+)$ index.php?url=$1&typeSearch=$2&categorie=$3 [L,QSA]
+
+RewriteRule ^([^/]+)/Type=(Produit|Service)$ index.php?url=$1&addType=$2 [L,QSA]
+
+RewriteRule ^([^/]+)/(Produit|Service|Profil)/([0-9]+)$ index.php?url=$1&elementType=$2&elementId=$3 [L,QSA]
+
+RewriteRule ^([^/]+)/(Produits|Services)$ index.php?url=$1&typeElement=$2 [L,QSA]
+

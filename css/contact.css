@@ -1,0 +1,116 @@
+html,body
+{
+	margin: 0;
+	padding: 0;
+	font-family: var(--myFont1);
+}
+input
+{
+	width: 100%;
+	background-color: transparent;
+	border-bottom: solid 1px var(--colorBlack1);
+}
+div.contactBanner
+{
+	width: 100%;
+	background-image: url('../img/contactBanner.png');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 30%;
+	background-color: var(--colorPrincipal);
+	height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+div.contactBanner div
+{
+	width: 90%;
+	text-align: center;
+	margin: 10px auto auto auto;
+	background-color: rgba(12,12, 13, 0.4);
+	padding: 20px 0px;
+	box-sizing: border-box;
+	color: var(--colorWhite1);
+}
+div.contactBanner div p
+{
+	font-size: var(--textSize);
+}
+div.contactForm
+{
+	width: 80%;
+	margin: 30px auto;
+	padding: 50px 0;
+}
+div.cfTitle
+{
+	margin: auto;
+	width: 90%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+div.cfTitle h2
+{
+	width: 100%;
+	word-break: break-all;
+}
+div.cfTitle hr
+{
+	width: 20%;
+	margin: 20px auto;
+	border: solid 4px var(--colorPrincipal);
+}
+div.contactForm form
+{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.cfFormDiv,div.cfFormBtn
+{
+	margin: 20px auto;
+}
+div.cfFormDiv:nth-child(1),div.cfFormDiv:nth-child(2)
+{
+	width: 45%;
+}
+div.cfFormDiv:nth-child(3)
+{
+	width: 95%;
+}
+div.cfFormDiv:nth-child(3) input
+{
+	height: 200px;
+}
+div.cfFormBtn 
+{
+	display: flex;
+	justify-content: left;
+	width: 100%;
+}
+
+
+
+@media screen and (max-width: 576px)
+{
+	div.contactBanner
+	{
+		height: 20vh;
+	}
+	div.contactBanner div p
+	{
+		font-size: var(--textSize);
+	}
+	div.contactForm
+	{
+		width: 90%;
+	}
+	div.cfFormDiv:nth-child(1),div.cfFormDiv:nth-child(2)
+	{
+		width: 95%;
+	}
+}

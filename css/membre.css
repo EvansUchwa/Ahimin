@@ -1,0 +1,137 @@
+.pageContent
+{
+	background-image: url('../img/png/bg8.png');
+	background-repeat: repeat;
+	/*background-color: var(--colorWhite1);*/
+	background-size: 40%;
+
+	padding: 50px 0;
+}
+
+
+div.memberArea input[type="radio"]
+{
+	display: none;
+}
+div.memberArea
+{
+	width: 60%;
+	margin: auto;
+	font-family: var(--myFont1);
+}
+div.maTitle
+{
+	width: 100%;
+	text-align: center;
+}
+div.maTitle label
+{
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin: auto 20px;
+}
+
+
+div.memberArea button
+{
+	background-color: var(--colorYellow1);
+	width: 150px;
+}
+div.memberArea form 
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/*background-color: pink;*/
+}
+div.memberArea form div.formField
+{
+	/*background-color: yellow;*/
+	width: 100%;
+	margin: 20px auto;
+	display: flex;
+}
+div.memberArea form div.formField input
+{
+	width: 40%;
+	margin: auto;
+	border-bottom: solid 1px var(--colorBlack2);
+	background-color: transparent;
+} 
+div.memberArea div.formBtn
+{
+	margin: 15px 0;
+	width: 100%;
+	text-align: center;
+}
+
+div.footForm
+{
+	width: 40%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 12px;
+}
+div.rememberMe
+{
+	display: flex;
+	flex-direction: row;
+}
+div.rememberMe input
+{
+	display: block;
+}
+div.maOtherLogin
+{
+	width: 100%;
+	text-align: center;
+}
+div.maOtherLogin p:first-child
+{
+	font-weight: bold;
+}
+div.maOtherLogin p:last-child
+{
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	margin: auto;
+	border-radius: 40px;
+	background-color: #dd4b39;
+	color: var(--colorWhite1);
+}
+
+
+#connexionRadio:checked ~ div.maTitle label:first-child
+{
+	color: var(--colorYellow2);
+}
+#connexionRadio:checked ~ div.maLogin
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+div.maLogin
+{
+	display: none;
+}
+#inscriptionRadio:checked ~ div.maTitle label:last-child
+{
+	color: var(--colorYellow2);
+}
+#inscriptionRadio:checked ~ div.maSignin
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+div.maSignin
+{
+	display: none;
+}

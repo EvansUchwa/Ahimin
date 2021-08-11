@@ -1,0 +1,163 @@
+:root
+{
+	--navHeight: 30vh;
+}
+input:-webkit-autofill,input:-moz-autofill,
+input:-webkit-autofill:hover,input:-moz-autofill:hover,
+input:-webkit-autofill:focus,input:-moz-autofill:focus,
+input:-webkit-autofill:active,input:-moz-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px var(--colorScLow2) inset !important;
+}
+div.navFirstRow
+{
+	width: 100%;
+	height: 35%;
+	border-bottom: solid 1px var(--colorWhite2);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--colorSecond);
+}
+div.navFirstRow a
+{
+	color: var(--colorWhite1);
+	transition: var(--colorTransition1);
+}
+i.navIcon
+{
+	/*color: var(--colorWhite3);*/
+	margin-right: 5px;
+}
+div.navFirstRow select
+{
+	margin: auto 10px;
+}
+div.nfrFirst
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: 10px;
+}
+div.navFirstRow span
+{
+	margin: 0 10px;
+	color: var(--colorPrincipal);
+}
+div.nfrLast
+{
+	display: flex;
+	flex-direction: row;
+	margin-right: 10px;
+}
+div.navFirstRow a
+{
+	color: var(--colorWhite3);
+}
+div.navFirstRow a:hover
+{
+	color: var(--colorPrincipal);
+}
+
+
+div.navSecondRow
+{
+	z-index: 1000;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	height: 65%;
+	transition: all 0.5s ease;
+	/*background-color: var(--colorSecond);*/
+	background-color: var(--colorPrincipal);
+}
+
+
+input[type="checkbox"]
+{
+	display: none;
+}
+div.nsrAction
+{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	/*position: relative;*/
+}
+#nsrCheckPhoneAuth:checked ~ div.nsrPhoneAuth ul
+{
+	height: auto;
+	max-height: 160px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+div.nsrPhoneAuth
+{
+	display: none;
+	/*background-color: pink;*/
+}
+div.nsrPhoneAuth label
+{
+	font-size: calc(var(--textSize) * 2);
+	color: var(--colorScLow2);
+}
+div.nsrPhoneAuth ul
+{
+		transition: max-height 0.5s var(--animationEase);
+		position: absolute;
+		top: 80%;
+		right: 0;
+		background-color: var(--colorWhite1);
+		height: 0;
+		max-height: 0;
+		overflow-y: hidden;
+}
+div.nsrPhoneAuth ul li
+{
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	text-align: justify;
+	font-size: calc(var(--textSize) * 1.1);
+}
+div.nsrPhoneAuth ul li:hover
+{
+	background-color: var(--colorPrincipal);
+}
+div.nsrPhoneAuth ul li:hover a
+{
+	color: var(--colorWhite1);
+}
+
+
+
+div.nsrSearch
+{
+	background-color: #ecf2fb;
+}
+form.navSearchForm input
+{
+	border: solid 1px var(--colorSecond);
+	color: var(--colorScLow2);
+	background-color: #ecf2fb;
+}
+form.navSearchForm div:nth-child(1) input
+{
+	border-right-color: var(--colorSecond);
+}
+form.navSearchForm button
+{
+	background-color: var(--colorScLow1);
+	color: white;
+}
+
+div.pageContent
+{
+	/*margin-top: calc(var(--navHeight) * 1.5);*/
+}
+ul.navHoveredList
+{
+	top: var(--navHeight);
+}

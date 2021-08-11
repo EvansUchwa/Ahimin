@@ -1,0 +1,259 @@
+:root
+{
+	--navHeight:  100px;
+}
+nav.navbar
+{
+	height: var(--navHeight);
+}
+i.navIcon
+{
+	/*color: var(--colorWhite3);*/
+	margin-right: 5px;
+}
+
+
+div.nfrLast
+{
+	position: relative;
+	width: auto;
+	box-sizing: border-box;
+	margin: auto 0;
+}
+div.nfrLast label
+{
+	display: flex;
+	flex-direction: row;
+	color: var(--colorBlack1);
+	transition: var(--colorTransition1);
+}
+div.nfrLast label img
+{
+	margin: auto;
+	width: var(--profilImgNav);
+	background-color: var(--colorWhite1);
+	height: var(--profilImgNav);
+	border-radius: 100%;
+	object-fit: cover;
+}
+div.nfrLast label p
+{
+	margin: auto 5px;
+}
+div.nfrLast label i
+{
+	font-size: calc(var(--textSize) * 1.2);
+	transition: transform 0.2s linear;
+}
+div.nfrLast label:hover
+{
+	/*color: var(--colorPrincipal);*/
+}
+#nfrlCheckAuth:checked ~ div.nfrLast ul
+{
+	height: auto;
+	max-height: 200px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+#nfrlCheckAuth:checked ~ div.nfrLast label i
+{
+	transform: rotate(-180deg);
+}
+div.nfrLast ul
+{
+	z-index: 2000;
+	transition: max-height 0.5s var(--animationEase);
+	position: absolute;
+	top: 120%;
+	right: 0;
+	height: 0;
+	overflow-y: hidden;
+	max-height: 0;
+	background-color: var(--colorWhite1);
+}
+div.nfrLast ul li
+{
+	padding: 10px 15px;
+	font-size: calc(var(--textSize) * 0.8);
+}
+div.nfrLast ul li a
+{
+	display: flex;
+}
+
+
+div.navSecondRow
+{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	position: relative;
+	background-color: var(--colorPrincipal);
+}
+
+
+
+
+
+div.nsrAction
+{
+	display: flex;
+	flex-direction: row;
+}
+/*Div authentification sur mobile*/
+div.nsrPhoneAuth
+{
+	display: none;
+}
+
+/**/
+div.nsrAction label
+{
+	margin: auto;
+	text-align: center;
+	font-size: calc(var(--textSize) * 1.2);
+	position: relative;
+}
+
+div.nsrAction label span.noticeNumber
+{
+	color: white;
+	position: absolute;
+	top: -10%;
+	right: -5%;
+	font-size: calc(var(--textSize) * 0.8);
+}
+
+/*Les notif*/
+#nsrCheckNotice:checked ~ div.nsrNotice div#noticeModalResult
+{
+	display: flex;
+}
+.noticeModalBody
+{
+	width: var(--modalResponsive);
+	border-radius: 20px;
+}
+.noticeList
+{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding-top: 30px;
+	background-color: var(--colorWhite1);
+	height: 60vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.noticeList h3
+{
+	text-align: center;
+}
+ul.noticeListUl
+{
+	width: 98%;
+	margin: 10px auto;
+}
+ul.noticeListUl li
+{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin: 10px auto;
+}
+ul.noticeListUl li img
+{
+	height: var(--inputHeight);
+	width: var(--inputHeight);
+	border-radius: 100%;
+	margin: 0 auto 0 0;
+}
+ul.noticeListUl li a
+{
+	color: var(--colorBlack1);
+	width: 65%;
+	margin: 0 auto;
+	font-size: calc(var(--textSize) * 0.8);
+}
+ul.noticeListUl li p
+{
+	background-color: var(--colorPrLow1);
+	height: var(--inputHeight) !important;
+	width: var(--inputHeight) !important;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	color: var(--colorWhite1);
+	justify-content: center;
+	margin: 0 auto;
+	font-size: calc(var(--textSize) * 1.5);
+}
+ul.navHoveredList
+{
+	top: var(--navHeight);
+}
+
+div.nsrSearch
+{
+	background-color: var(--colorSecond);
+}
+form.navSearchForm input
+{
+	border: none;
+	background-color: var(--overlayWhite);
+}
+form.navSearchForm div:nth-child(1) input
+{
+	border-right-color: var(--colorSecond);
+}
+form.navSearchForm button
+{
+	background-color: var(--overlayWhite);
+	color: white;
+}
+
+
+/*Non trouvé*/
+div.notFound
+{
+	width: 100%;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+div.notFound img
+{
+	object-fit: contain;
+	height: 20vh;
+}
+div.commentNotFound
+{
+	text-align: left;
+}
+
+
+
+
+
+
+
+#modalChoiceServicePost/*,#modalChoiceProductPost*/
+{
+	/*display: flex;*/
+}
+
+
+
+.footBars
+{
+	margin: 20px auto;
+	width: 90%;
+	border-color: var(--colorPrincipal);
+}
+div.bottomBanner
+{	
+	display: none;
+}
+

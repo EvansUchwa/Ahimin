@@ -1,0 +1,380 @@
+:root
+{
+	--pfImg: 60vh;
+}
+body
+{
+	font-family: var(--myFont1);
+}
+div.nsrSearch
+{
+	margin-bottom: 0 !important;
+}
+div#profilViewFollow,div#profilRate
+{
+	/*display: flex;*/
+}
+div.pvfBody,div.prBody
+{
+	background-color: #f7f7f7;
+	width: var(--modalResponsive) !important;
+}
+div.pvfResult,div.prResult
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 90%;
+	margin: 30px auto;
+}
+div.pvfResult div
+{
+	display: flex;
+	flex-direction: column;
+	height: 60vh;
+	max-height: 80vh;
+	overflow-y: auto;
+	overflow-x: hidden !important;
+}
+div.prResult h4
+{
+	text-align: center;
+}
+div.prStars 
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	/*background-color: pink;*/
+}
+div.prResult i
+{
+	font-size: calc(var(--textSize) * 3);
+	color: var(--colorWhite3);
+	transition: color 0.4s ease;
+}
+div.spinnerModal
+{
+	width: 100%;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+div.spinnerModal img
+{
+	height: 20vh;
+}
+div.resultText
+{
+	display: none;
+	background-color: var(--successColor);
+	width: 100%;
+	color: white;
+	padding: 10px 0;
+	text-align: center;
+}
+div.pvfResult h3
+{
+	color: var(--colorPrLow1);
+}
+div.pvfResult hr
+{
+	width: 20%;
+	border-color: var(--colorScLow2);
+	margin: 5px 0;
+}
+div.pvfResult div img
+{
+	height: calc(var(--textSize) * 3);
+	width: calc(var(--textSize) * 3);
+	border-radius: 100%;
+}
+div.pvfResult div a
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: left;
+	width: 100%;
+	margin: 10px auto;
+	color: var(--colorWhite4);
+}
+div.pvfResult div a p
+{
+	margin-left: 10px;
+}
+div.pageContent
+{
+	margin: 0;
+	/*background-color: var(--colorSecond);*/
+}
+input[type='radio']
+{
+	display: none;
+}
+.dashProfilUser
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+div.dpuBanner
+{
+	height: calc(var(--textSize) * 10);
+	position: relative;
+	width: 100%;
+	background-color: var(--colorScLow2);
+}
+div.dpuUserImg
+{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+}
+div.dpuUserImg img
+{
+	border: solid 4px var(--colorWhite1);
+	border-radius: 100%;
+	width: calc(var(--textSize) * 10);
+	height: calc(var(--textSize) * 10);
+	margin: 0px auto;
+	object-fit: cover;
+	background-color: var(--colorScLow2);
+}
+
+div.dpuProfilStars
+{
+	width: 80%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: flex-end;
+	padding: 10px 0;
+	margin: auto;
+}
+div.dpuProfilStars span
+{
+	font-size: calc(var(--textSize) * 1.2);
+	color: #587fda;
+}
+div.dpuProfilStars p
+{
+	display: flex;
+	color: var(--colorPrLow1);
+}
+div.dpuProfilStars button
+{
+	padding: 5px 8px;
+	height: initial;
+}
+div.dpuProfilStars p i
+{
+	font-size: calc(var(--textSize) * 1.5);
+}
+div.dpuName
+{
+	padding: 20px 0;
+	width: 80%;
+	margin: auto;
+	/*background-color: pink;*/
+	border-bottom: solid 1px var(--colorWhite3);
+	display: flex;
+	justify-content: space-between;
+}
+div.dpuName h3
+{
+	color: var(--colorPrLow1);
+}
+div.dpuName button
+{
+	/*background-color: var(--colorPrLow1);*/
+	border-radius: 60px;
+}
+div.followsView
+{
+	margin: 10px auto;
+	width: 100%;
+	/*display: flex;*/
+	text-align: center;
+}
+div.followsView button
+{
+	margin: auto 10px;
+	border-radius: 60px;
+	background-color: white;
+	border: solid 1px var(--colorPrincipal);
+	color: var(--colorPrincipal);
+	padding: 8px 10px;
+}
+div.dpuDescription
+{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: auto;
+}
+div.dpuDescription span
+{
+	font-size: calc(var(--textSize) * 1.5);
+	color: var(--colorSecond);
+}
+div.dpuDescription  p
+{
+	padding: 10px 0;
+	font-weight: bold;
+}
+div.dpuOtherInfo 
+{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.dpuOtherInfo div
+{
+	display: flex;
+	flex-direction: column;
+	margin: 0 50px 0 0;
+}
+div.dpuOtherInfo div span
+{
+	display: flex;
+	align-items: center;
+	padding: 5px 0;
+	font-size: calc(var(--textSize) * 1.2);
+	color: var(--colorSecond);
+}
+div.dpuOtherInfo div i
+{
+	height: calc(var(--btnHeight));
+	width: calc(var(--btnHeight));
+	background-color: var(--colorSecond);
+	color: var(--colorPrincipal);
+	border-radius: 100%;
+	margin-right: 10px;
+}
+div.dpuOtherInfo div p,div.dpuOtherInfo div a
+{
+	color: var(--colorWhite4);
+	font-size: calc(var(--textSize));
+	margin-left: var(--btnHeight);
+}
+
+
+.dpuMailStatut
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.dpuMailStatut a,.dpuMailStatut p
+{
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	font-size: var(--textSize);
+	height: calc(var(--btnHeight));
+	padding: 0 15px;
+	color: var(--colorPrincipal);
+	margin: 5px;
+	background-color: var(--colorScLow1);
+}
+
+
+
+
+div.dpuPublication
+{
+	width: 50%;
+	margin: 20px auto;
+	text-align: center;
+}
+div.dpuPublication hr
+{
+	width: 10%;
+	border-color: var(--colorPrincipal);
+}
+div.dpuPublication div > button
+{
+	height: initial;
+	padding: 10px 15px;
+	transition: all 0.2s ease-in-out;
+}
+div.userProducts,div.userServices
+{
+	display: none;
+}
+
+#userProductRadio:checked ~ div > button:first-child
+{
+	color: var(--colorWhite1);
+}
+#userProductRadio:checked ~ div > button:last-child
+{
+	color: var(--colorScLow2);
+	background-color: transparent;
+}
+#userProductRadio:checked ~ div.userProducts
+{
+	display: flex;
+}
+#userServiceRadio:checked ~ div > button:last-child
+{
+	background-color: var(--colorPrincipal);
+	color: var(--colorScLow2);
+}
+#userServiceRadio:checked ~ div > button:first-child
+{
+	background-color: transparent;
+}
+#userServiceRadio:checked ~ div.userServices
+{
+	display: flex;
+}
+
+div.userProducts,div.userServices
+{
+	width: 100%;
+	margin: 20px auto;
+	flex-wrap: wrap;
+}
+
+div.userProducts a,div.userServices a
+{
+	margin: 20px auto !important;
+}
+
+
+@media screen and (max-width:  500px)
+{
+	div.dpuProfilStars
+	{
+		width: 98%;
+	}
+	div.dpuUserImg
+	{
+		left: 5%;
+	}
+	div.dpuName
+	{
+		width: 95%;
+		padding: 10px 0;
+	}
+
+	div.dpuDescription
+	{
+		width: 95%;
+	}
+	div.dpuOtherInfo
+	{
+		width: 95%;
+		/*align-items: flex-start;*/
+	}
+	div.dpuOtherInfo div
+	{
+		margin: 0 0 0 0;
+	}
+}
